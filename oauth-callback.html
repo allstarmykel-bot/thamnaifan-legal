@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>TikTok OAuth Callback</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; background:#111; color:#eee; display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; }
+  .box { max-width: 640px; padding: 24px; background:#1c1c1c; border-radius:12px; }
+  h1 { font-size: 18px; }
+  code { display:block; background:#000; color:#7CFC7C; padding:12px; border-radius:8px; word-break:break-all; margin-top:8px; font-size:14px; }
+  .label { color:#999; font-size:13px; margin-top:16px; }
+  button { margin-top:12px; padding:8px 14px; border-radius:6px; border:none; background:#fe2c55; color:white; cursor:pointer; font-size:14px; }
+  </style>
+    </head>
+    <body>
+    <div class="box">
+      <h1>TikTok authorized this app.</h1>
+  <p>Copy the <b>code</b> value below and paste it back into the terminal running <code>auth_setup.py</code>.</p>
+      <div class="label">Authorization code</div>
+      <code id="code">(reading URL...)</code>
+      <div class="label">State</div>
+      <code id="state">(reading URL...)</code>
+      <button onclick="copyCode()">Copy code</button>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+  document.getElementById('code').textContent = params.get('code') || '(no code found in URL)';
+  document.getElementById('state').textContent = params.get('state') || '(no state found in URL)';
+  function copyCode() {
+        const code = params.get('code') || '';
+    navigator.clipboard.writeText(code).then(() => alert('Code copied to clipboard'));
+  }
+</script>
+  </body>
+  </html>
+  
