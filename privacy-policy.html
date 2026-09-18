@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+  <html lang="th">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ทำนายฝัน Auto Post — Privacy Policy</title>
+  <style>
+    :root{
+      --paper:#faf8f4;
+      --ink:#1c1b19;
+    --ink-soft:#5b5750;
+    --rule:#e2ddd2;
+          --accent:#3d4a3a;
+    --accent-soft:#eef1ea;
+      }
+  body{
+          background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height:1.65;
+    padding-inline:20px;
+    padding-block:56px;
+    margin:0;
+}
+  main{
+        max-width:660px;
+    margin:0 auto;
+}
+  .eyebrow{
+        font-family:"IBM Plex Mono",monospace;
+    font-size:12.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 10px;
+}
+  h1{
+        font-family:"IBM Plex Serif",Georgia,serif;
+    font-weight:600;
+    font-size:clamp(28px,5vw,38px);
+    line-height:1.15;
+    margin:0 0 6px;
+}
+  .dateline{
+        color:var(--ink-soft);
+    font-size:14px;
+    margin:0 0 40px;
+    padding-bottom:32px;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+        font-family:"IBM Plex Serif",Georgia,serif;
+    font-weight:600;
+    font-size:21px;
+    margin:44px 0 12px;
+}
+  h2 .num{
+    display:inline-block;
+    color:var(--accent);
+    font-family:"IBM Plex Mono",monospace;
+    font-size:14px;
+    font-weight:500;
+    margin-right:10px;
+  }
+  p{ margin:0 0 14px; max-width:65ch; }
+  ul{ margin:0 0 14px; padding-left:1.2em; }
+  li{ margin-bottom:8px; }
+  strong{ font-weight:600; }
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:16px 18px;
+    margin:20px 0 28px;
+    font-size:14.5px;
+    color:var(--ink);
+  }
+  .callout .label{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11.5px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--accent);
+    display:block;
+    margin-bottom:6px;
+  }
+  a{ color:var(--accent); }
+  footer{
+        margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:13px;
+}
+</style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap">
+  </head>
+  <body>
+  <main>
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>ทำนายฝัน Auto Post</h1>
+    <p class="dateline">Effective date: 18 September 2026</p>
+
+    <div class="callout">
+      <span class="label">In short</span>
+      This app is a single-operator content-publishing tool. It is used only by its
+    own developer to publish that developer's own video content to that developer's
+      own TikTok and Facebook accounts. It is not a public-facing service, does not
+    accept sign-ups from other users, and does not collect data about anyone else.
+  </div>
+
+  <h2><span class="num">01</span>Who operates this app</h2>
+    <p>
+      ทำนายฝัน Auto Post is a personal automation tool built and operated by the
+    developer of the "ทำนายฝัน" content channel. It connects to the developer's
+      own TikTok account (via the TikTok Content Posting API) and the developer's
+      own Facebook Page, solely to publish short-form video content that the
+    developer has already produced.
+    </p>
+
+  <h2><span class="num">02</span>What data this app accesses</h2>
+  <p>The app accesses only the following, and only for the developer's own connected accounts:</p>
+    <ul>
+      <li><strong>Authentication tokens</strong> — an OAuth access token and refresh token issued by TikTok (and, separately, a Page access token issued by Facebook), used to authenticate publishing requests.</li>
+      <li><strong>Basic account identifiers</strong> — the connected TikTok user ID and Facebook Page ID, used only to address the correct account when publishing.</li>
+    <li><strong>Video files and captions</strong> — the video content and caption text that the developer supplies to be posted. This content is produced entirely by the developer beforehand; the app does not read, store, or analyze any other content on the connected accounts.</li>
+  </ul>
+  <p>
+    The app does not access follower lists, direct messages, analytics data,
+      or any content belonging to other TikTok or Facebook users. It has no
+    login flow, account-creation flow, or data-collection form for the public.
+  </p>
+
+  <h2><span class="num">03</span>How this data is stored and used</h2>
+    <p>
+      Tokens and identifiers are stored locally on the developer's own machine
+      (in a local configuration file), never on a shared or public server, and
+      are never transmitted anywhere other than directly to the TikTok and
+    Facebook APIs to authorize a publish request. Video files are stored
+    locally until they are uploaded and are not retained by any third party
+    beyond TikTok's and Facebook's own standard hosting of published posts.
+  </p>
+
+  <h2><span class="num">04</span>Data sharing</h2>
+  <p>
+    This app does not sell, rent, or share any data with third parties. It
+    does not use data for advertising, profiling, or any purpose other than
+    publishing the developer's own videos to the developer's own accounts.
+    </p>
+
+  <h2><span class="num">05</span>Data retention and revocation</h2>
+  <p>
+    Access tokens remain valid until revoked. The developer can revoke this
+      app's access at any time from TikTok's account settings
+      (Settings → Security and permissions → Manage app permissions) or from
+    Facebook's Business Integrations settings, which immediately invalidates
+      the stored tokens.
+  </p>
+
+  <h2><span class="num">06</span>Changes to this policy</h2>
+    <p>
+      Because this is a single-operator tool, this page is updated directly
+    by the developer whenever the app's data practices change. The effective
+      date above reflects the most recent update.
+    </p>
+
+    <h2><span class="num">07</span>Contact</h2>
+    <p>
+      Questions about this policy can be sent to the developer through the
+    "ทำนายฝัน" channel's official contact channels.
+    </p>
+
+    <footer>ทำนายฝัน Auto Post · Privacy Policy</footer>
+  </main>
+  </body>
+  </html>
+  
